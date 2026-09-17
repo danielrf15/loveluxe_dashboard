@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Luxe - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="brand">
+            <h1>LOVE LUXE</h1>
+            <p>BY EA • EST. 2024</p>
+        </div>
+
+        <div class="menu-title">GENERAL</div>
+
+        <a href="#" class="nav active">
+            Dashboard
+        </a>
+
+        <div class="menu-title team-title">TEAM MODULES</div>
+
+        <a href="#" class="nav">
+            New Order / POS
+            <span>−</span>
+        </a>
+
+        <a href="#" class="nav">
+            Appointments
+            <span>−</span>
+        </a>
+
+        <a href="#" class="nav">
+            Activity Logs
+            <span>−</span>
+        </a>
+
+        <a href="#" class="nav">
+            Product Management
+            <span>−</span>
+        </a>
+
+        <a href="#" class="nav">
+            Inventory & Stock
+            <span>−</span>
+        </a>
+
+        <a href="#" class="nav">
+            Sales Reports
+            <span>−</span>
+        </a>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+        <!-- TOP BAR -->
+        <header class="topbar">
+
+            <h2>Dashboard Overview</h2>
+
+            <div class="profile">
+
+                <div class="profile-info">
+                    <strong>Mark Daniel Flores</strong>
+                    <small>Admin / Module 2</small>
+                </div>
+
+                <div class="avatar">
+                    F
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+        <section class="content">
+
+            <!-- DASHBOARD CARDS -->
+            <div class="cards">
+
+                <div class="card">
+
+                    <p class="label">
+                        TODAY'S TOTAL SALES
+                    </p>
+
+                    <h3>
+                        ₱18,450.00
+                    </h3>
+
+                    <p class="green">
+                        +12.5% from yesterday
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <p class="label">
+                        TRANSACTIONS TODAY
+                    </p>
+
+                    <h3>
+                        14
+                    </h3>
+
+                    <p class="sub">
+                        Completed orders
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <p class="label">
+                        AVAILABLE STOCK
+                    </p>
+
+                    <h3>
+                        128
+                    </h3>
+
+                    <p class="sub">
+                        Items in catalog
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <p class="label">
+                        LOW STOCK ALERTS
+                    </p>
+
+                    <h3 class="red">
+                        2
+                    </h3>
+
+                    <p class="red-text">
+                        Needs restocking!
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- TABLES -->
+            <div class="tables">
+
+                <!-- RECENT TRANSACTIONS -->
+                <section class="table-card">
+
+                    <h3>
+                        Recent Transactions
+                    </h3>
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>RECEIPT #</th>
+                                <th>CUSTOMER</th>
+                                <th>AMOUNT</th>
+                                <th>STATUS</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="transactionsBody">
+                        </tbody>
+
+                    </table>
+
+                </section>
+
+
+                <!-- STOCK STATUS -->
+                <section class="table-card">
+
+                    <h3>
+                        Stock Status
+                    </h3>
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>ITEM</th>
+                                <th>QTY</th>
+                                <th>STATUS</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="stockBody">
+                        </tbody>
+
+                    </table>
+
+                </section>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
